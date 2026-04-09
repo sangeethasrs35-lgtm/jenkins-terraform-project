@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami          ="ami-0ec10929233384c7f"
   instance_type = "t3.micro"
-
+# trigger build
   user_data = <<-EOF
               #!/bin/bash
               apt update -y
