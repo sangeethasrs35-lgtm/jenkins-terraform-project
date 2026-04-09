@@ -11,6 +11,6 @@ resource "aws_instance" "web" {
               apt update -y
               apt install apache2 -y
               systemctl start apache2
-              echo "Hello from Jenkins" > /var/www/html/index.html
+              echo "Hello from Jenkins+Terraform" > /var/www/html/index.html
               EOF
 }
